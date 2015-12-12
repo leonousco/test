@@ -1,0 +1,93 @@
+.btn-ok{
+  float: right;
+  margin-left: 4px;
+  font-weight: bold;
+}
+.btn-xx{
+  float: right;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+div#bottom_merge.row{
+  text-align: center;
+}
+
+
+button.btn-primary.btn{
+  position: absolute;
+
+}
+/*
+
+input#search.form-control {
+    width: 100%;
+}
+
+input#patientLastRrn.form-control{
+    width : 50%;
+}
+input#patientFirstRrn.form-control{
+    width : 50%;
+}
+input#birthOrder.form-control{
+    width : 50%;
+}
+input#email.form-control{
+    width : 50%;
+}
+input#countryCode.form-control{
+    width : 50%;
+}
+input#patientName.form-control{
+    width : 50%;
+}
+input#officeName.form-control{
+    width : 50%;
+}
+input#patientPhoneNumber.form-control{
+    width : 50%;
+}
+input#patientHomeNumber.form-control{
+    width : 50%;
+}
+input#officeNumber.form-control{
+    width : 50%;
+}
+input#homePostalCode.form-control{
+    width : 50%;
+}
+input#licenseNumber.form-control{
+    width : 50%;
+}
+input#patientAddress.form-control{
+    width : 50%;
+}
+input#officeAddress.form-control{
+    width : 50%;
+}
+input#officePostalCode.form-control{
+    width : 50%;
+}
+input#gender.form-control{
+    width : 50%;
+}
+input#birthOrder.form-control{
+    width : 50%;
+}
+input#countryCode.form-control{
+    width : 50%;
+}
+input#multipleBirth.form-control{
+    width : 50%;
+}
+input#dateOfBirth.form-control{
+    width : 50%;
+}
+input#isForeigner.form-control{
+    width : 50%;
+}
+input#passportNumber.form-control{
+    width : 50%;
+}
+*/

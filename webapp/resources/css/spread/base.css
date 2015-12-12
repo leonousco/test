@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+
+@font-face{font-family:"latobold";src:url('https://dl.dropboxusercontent.com/u/47663272/upload-module-wireframe/Lato-Bold.ttf') format("truetype")}
+@font-face{font-family:"latoheavy";src:url('https://dl.dropboxusercontent.com/u/47663272/upload-module-wireframe/Lato-Heavy.ttf') format("truetype")}
+
+html {
+	background-color: #EEEEEE;
+}
+
+
+.container {top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;overflow: hidden;}
+.container.active {-webkit-transition-delay: .2s;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+/* btn 꽉안찬 버전
+.btn {width: 100px;height: 20px;background-color: #fff;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;
+	-webkit-transform: scale(1);-moz-transform: scale(1);-o-transform: scale(1);-ms-transform: scale(1);transform: scale(1);
+	-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+}
+
+.btn.active {width: 95%;height:95%;
+	-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;
+}*/
+
+/* btn 꽉찬 버전 : 차이점은 margin, width, height*/
+.btn {width: 100px;height: 20px;background-color: #fff;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	top: 420px;bottom: 0;left: 200px;right: 0;position: absolute;
+	-webkit-transform: scale(1);-moz-transform: scale(1);-o-transform: scale(1);-ms-transform: scale(1);transform: scale(1);
+	-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+}
+
+.btn.active {width: 100%;height:100%;
+	-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+	top: 0;bottom: 0;left: 0;right: 0;position: absolute;
+}
+
+/*
+.icon-bg{width: 20px;height:20px;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;cursor: pointer;
+	-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;
+}
+
+.icon-bg.active {bottom: 85%;left:85%;
+	-webkit-transform: rotate(225deg);-moz-transform: rotate(225deg);-o-transform: rotate(225deg);-ms-transform: rotate(225deg);transform: rotate(225deg);
+	-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;
+}
+*/
+
+.icon-bg {
+	width:0px;height:20px;
+	top:2%;
+	right:2%;
+	margin:auto;
+	position:absolute;
+	opacity:0;	
+}
+
+.icon-bg.active {
+	opacity:1;
+	width:20px;
+	height:20px;
+	z-index:99;
+	-webkit-transform: rotate(225deg);-moz-transform: rotate(225deg);-o-transform: rotate(225deg);-ms-transform: rotate(225deg);transform: rotate(225deg);
+	 -webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+	 -webkit-transition-delay: .3s;transition-delay: .3s;
+}
+
+.icon {width:20px;height:4px;
+	background-color: #c8c8c8;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;
+	-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
+}
+
+.icon::before {
+	content: "";
+	background-color: #c8c8c8;
+	height:20px;width:4px;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;position: absolute;
+	-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* top-bg */
+
+.top-bg {
+	opacity:0;
+	width:100%;
+	height:0px;
+	background:#fff;
+	position:relative;
+	-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;transition: all .4s ease;
+}
+
+.top-bg.active {
+	opacity:0.7;
+	width:100%;
+	height:20%;
+	background:#ffd557;
+	/*background:url("http://newyjh.com/images/banner/main-banner-03.jpg");
+	background-repeat: no-repeat;
+	background-size:contain;
+	*/
+	left:0;
+	top:0;
+	-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;
+}
+
+/** top-title **/
+
+.top-title {
+	opacity:0;
+	position: absolute;
+	bottom: 10%;
+	left:10%;
+}
+
+.top-title.active {
+	opacity:1;
+	-webkit-transition-delay: .1s;transition-delay: .1s;
+}
+
+/**-----------**/
+
+/** top-title **/
+
+.top-ct {
+	opacity:0;
+	position:absolute;
+}
+
+.top-ct.active {
+	opacity:1;
+	/*height: TODO*/
+	-webkit-transition-delay: .1s;transition-delay: .1s;
+}
+
+.title {
+	opacity:1;
+	-webkit-transition-delay: .4s;transition-delay: .4s;
+}
+
+.title.active {
+	opacity:0;
+	-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;
+}
+
+/**-----------**/
+
+/*--------*/

@@ -1,0 +1,108 @@
+<div class="page-header">
+  <h1><%= uiTitle %> <small><%= uiSubTitle %></small></h1>
+  
+  <!-- ALERT FOR MESSAGING -->
+  <div class="alert alert-success" style="display: none">  		
+  		<b>Success!</b>
+  </div>
+</div>
+
+<div class="row">
+
+<div class="col-xs-12">	
+</div>
+	
+</div>
+
+<div class="row">
+
+<div class="col-xs-12">
+	<form class="form-horizontal">
+	
+		<div class="form-group">
+	    	<label for="id" class="col-lg-2 control-label"><%= uiLabel1 %></label>  
+	    	<div class="col-lg-10">
+	      		<div class="input-group">
+				  <span class="input-group-addon">#</span>						  
+				  <input id="accountId" name="id" type="text" class="form-control" value="<%= id === null ? '' : id %>" disabled/>			  
+				</div>				      		
+	    	</div>
+	  	</div>
+	  	
+	  	<!-- NAME -->
+	  	<div id="formGroupname" class="form-group">
+	    	<label for="name" class="col-lg-2 control-label"><%= uiLabel2 %></label>
+	    	<div class="col-lg-10">
+	    		<div class="input-group">
+				  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>						  
+				  <input id="name" name="<%= displayName %>" type="text" class="form-control" value="<%= displayName %>">			  
+				</div> 
+				<span id="msgname" class="help-block"></span>     							  			  
+	    	</div>
+	  	</div>
+	  	
+	  	<!-- USERNAME -->
+	  	<div id="formGroupusername" class="form-group">
+	    	<label for="username" class="col-lg-2 control-label"><%= uiLabel3 %></label>
+	    	<div class="col-lg-10">
+	      		<div class="input-group">
+				  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>						  
+				  <input id="username" name="<%= code %>" type="text" class="form-control" value="<%= code %>"/>			  
+				</div>
+				<span id="msgusername" class="help-block"></span>      		
+	    	</div>
+	  	</div>
+	  	
+	  	<!-- PASSWORD -->
+	  	<div id="formGrouppassword" class="form-group">
+	    	<label for="password" class="col-lg-2 control-label"><%= uiLabel4 %></label>
+	    	<div class="col-lg-10">
+	      		<div class="input-group">
+				  <span class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>						  
+				  <input id="password" name="<%= description %>" type="text" class="form-control" value="<%= description %>"/>			  
+				</div>      		
+				<span id="msgpassword" class="help-block"></span>
+	    	</div>
+	  	</div>
+	  	
+	  	<div class="form-group">
+	    	<label for="password" class="col-lg-2 control-label">Last Update</label>
+	    	<div class="col-lg-10">
+	    		<h4><span id="lastUpdate" class="label label-primary">unknown</span></h4>  		
+	    	</div>
+	  	</div>
+	  	
+	  	<div class="form-group">
+	    	<div class="col-lg-offset-2 col-lg-10">
+	    		<button id="showParentsButton" type="button" class="btn btn btn-default btn-lg showParents">Parents</button>
+	    		<button id="showChildsButton" type="button" class="btn btn-default btn-lg showChilds">Child</button>    		      	
+	    		<button id="saveEntityButton" type="button" class="btn btn btn-default btn-lg save">Save</button>
+	    		<button id="deleteEntityButton" type="button" class="btn btn-warning btn-lg deleteConfirm">Delete</button>    		      	
+	    	</div>
+	  	</div>
+	  	
+	</form>
+		
+</div>
+
+</div>
+
+<!-- MODAL DELETE ACCOUNT -->
+ <div class="modal fade" id="deleteConfirmation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header modal-header-warning">
+             	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                 
+                 <h1><i class="glyphicon glyphicon-thumbs-up"></i> Delete Account <strong><%= name %></strong></h1>
+             </div>
+             <div class="modal-body">
+             	<p>Are you sure to delete the selected account <strong><%= name %> </strong> ?</p>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-warning delete">Confirm</button>
+                 <!-- a href="#" class="btn btn-warning delete" data-dismiss="modal">Confirm</a-->
+             </div>
+         </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->

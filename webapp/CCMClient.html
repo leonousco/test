@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>CCM Client</title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="" />
+  <link href="resources/css/bootstrap-3.3.5.css" rel="stylesheet">
+  <link href="resources/css/nis/fixfooter.css" rel="stylesheet">
+  <link href="resources/css/nis/backgrid.css" rel="stylesheet">
+  <link href="resources/css/nis/NHP.css" rel="stylesheet">
+  <link href="resources/css/ccm/ccm.css" rel="stylesheet">
+
+
+</head>
+        <!-- HTML code from Bootply.com editor -->
+<body>
+
+  <div id=header class="header"></div>
+  <div class="wrapper">
+      <div id="contents" class="container">
+      </div>
+  </div>
+  <div id=footer class="footer"></div>
+
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
+    <!-- vendor libraries -->
+
+    <script src="resources/js/lib/nis/jquery-1.9.1.js"></script>
+
+    <script src="resources/js/lib/nis/underscore-1.7.0.js"></script>
+
+    <script src="resources/js/lib/backbone/backbone-1.1.2.js"></script>
+    <script src="resources/js/lib/backbone/backbone.validation.js"></script>
+    <script src="resources/js/lib/nis/json2.js"></script>
+    <script src="resources/js/lib/backbone/backbone.babysitter.js"></script>
+    <script src="resources/js/lib/backbone/backbone.wreqr.js"></script>
+    <script src="resources/js/lib/handlebars-v4.0.2.js"></script>
+
+    <script src="resources/js/lib/bootstrap-3.3.5.js"></script>
+    <script src="resources/js/lib/nis/backbone.bootstrap-modal.js"></script>
+
+    <script src="resources/js/lib/backbone/backbone.localStorage.js"></script>
+    <script src="resources/js/lib/backbone/backbone.marionette.js"></script>
+    <script src="resources/js/lib/backbone/backbone.radio.js"></script>
+    <script src="resources/js/lib/backbone/marionette.templatemanager.js"></script>
+
+    <script src="resources/js/lib/nis/backbone.paginator.js"></script>
+    <script src="resources/js/lib/nis/backgrid.js"></script>
+
+
+    <!-- Nis libs -->    
+    <script src="resources/js/nis/Nis.js"></script>
+    <script src="resources/js/nis/util/map.js"></script>
+    <script src="resources/js/nis/Nis.Code.js"></script>
+    <script src="resources/js/nis/nis_env_mgr.js"></script>
+    <script src="resources/js/nis/nis-common.js"></script>
+    <script src="resources/js/nis/NisTestEnv.js"></script>        
+    <script src="resources/js/nis/model/Nis.Model.js"></script>
+    <script src="resources/js/nis/model/Nis.Collection.js"></script>    
+    <script src="resources/js/nis/model/Nis.UiInfo.js"></script>
+    <script src="resources/js/nis/model/Nis.Model.Concept.js"></script>    
+    <script src="resources/js/nis/app/NisMVC.js"></script>
+    <script src="resources/js/nis/app/NisApp.js"></script>
+    <script src="resources/js/nis/app/NisMVC.Application.js"></script>
+    <script src="resources/js/nis/app/NisMVC.Layout.js"></script>
+
+    <!-- ui components -->
+    <script src="resources/js/uic/Uic.js"></script>
+    <script src="resources/js/uic/View.js"></script>
+    <script src="resources/js/uic/ItemView.js"></script>
+    <script src="resources/js/uic/CompositeView.js"></script>
+    <script src="resources/js/uic/LayoutView.js"></script>
+    <script src="resources/js/uic/Button.js"></script>
+    <script src="resources/js/uic/ButtonGroup.js"></script>
+    <script src="resources/js/uic/Label.js"></script>
+    <script src="resources/js/uic/Input.js"></script>
+    <script src="resources/js/uic/Form.js"></script>
+    <script src="resources/js/uic/InputFormGroup.js"></script>
+    <script src="resources/js/uic/PageHeader.js"></script>
+    <script src="resources/js/uic/GridView.js"></script>
+    <script src="resources/js/uic/HBView.js"></script>
+    <script src="resources/js/uic/LayoutView.js"></script>
+    <script src="resources/js/uic/Backgrid.js"></script>
+    <script src="resources/js/uic/Well.js"></script>
+    <script src="resources/js/uic/DropDownButton.js"></script>
+    <script src="resources/js/uic/Span.js"></script>
+    <script src="resources/js/uic/SButton.js"></script>
+    <script src="resources/js/uic/CollapseButton.js"></script>
+    <script src="resources/js/uic/Table.js"></script>
+    <script src="resources/js/uic/TableView.js"></script>
+    <script src="resources/js/uic/Pagination.js"></script>
+    <script src="resources/js/uic/WaitingDialog.js"></script>
+    <script src="resources/js/uic/SelectPicker.js"></script>
+    <script src="resources/js/uic/FormView.js"></script>
+    <script src="resources/js/uic/FormLayout.js"></script>
+    <script src="resources/js/uic/Buttons.js"></script>
+    <script src="resources/js/uic/Modal.js"></script>
+    <script src="resources/js/uic/Textarea.js"></script>
+    <script src="resources/js/uic/RadioView.js"></script>
+    <script src="resources/js/uic/Footer.js"></script>
+    <script src="resources/js/uic/AccordionPanel.js"></script>
+    <script src="resources/js/uic/List.js"></script>
+
+    <!-- Nis Views -->
+    <script src="resources/js/nis/view/View.Footer.js"></script>
+    <script src="resources/js/nis/view/HeaderView.js"></script>    
+
+    <!-- application -->
+
+
+    <script> console.log("=========================") </script>
+
+    <script src="resources/js/ccm/client/template-info.js"></script>
+
+    <script src="resources/js/ccm/model/Nis.Model.CCMModel.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.CCM.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.EvaluateReq.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.User.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.CCMReg.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.CCMSearch.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.CCMEntity.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.CCMModel.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.CCMModifier.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.CCMQualifier.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.ValueItem.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.ValueSet.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.ModelIndex.js"></script>
+    <script src="resources/js/ccm/model/ccmObj/Nis.Model.CCMObj.MultiModelLoad.js"></script>
+    <script src="resources/js/ccm/model/Nis.Model.CCMModify.js"></script>
+    
+    <script src="resources/js/ccm/form/Nis.UIInfo.ManagerAddForm.js"></script>
+    <script src="resources/js/ccm/form/Nis.UIInfo.ManagerCheckForm.js"></script>
+    <script src="resources/js/ccm/form/Nis.UIInfo.UserApprovalForm.js"></script>
+    <script src="resources/js/ccm/form/Nis.UIInfo.UserAddForm.js"></script>
+
+    <script src="resources/js/ccm/client/uiinfo/Nis.Model.AppInfo.js"></script>  
+    <script src="resources/js/ccm/client/uiinfo/Nis.UiInfo.AppHeader.js"></script>
+    <!-- <script src="resources/js/lib/models/Nis.Model.OrganizationUi.js"></script> -->      
+    <script src="resources/js/ccm/client/uiinfo/Nis.UiInfo.CCMRegister.js"></script>
+    <script src="resources/js/ccm/client/uiinfo/Nis.UiInfo.CCMInfo.js"></script>     
+    
+    <script src="resources/js/nis/NisTestEnv.js"></script>
+
+    <script src="resources/js/ccm/client/NisApp.js"></script>
+    
+    <script src="resources/js/ccm/client/NisMVC.Router.js"></script>
+    <script src="resources/js/ccm/client/NisMVC.Controller.js"></script>
+    <script src="resources/js/ccm/client/OrgMgr.Layout.js"></script>
+
+    <script src="resources/js/ccm/client/view/Nis.View.CCMInfo.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMList.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.SearchView.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMEvaluateRequest.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMRegister.js"></script>    
+    <script src="resources/js/ccm/client/view/Nis.View.CCMPreview.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMEvalPreview.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMSearchDetail.js"></script>
+    <script src="resources/js/ccm/client/view/Nis.View.CCMModify.js"></script>   
+
+
+    <script>
+      console.log("------------------------")
+      var NisMVC = NisMVC || {};
+      NisMVC.rMode = "local";
+      NisMVC.entityUi = "Organizaion";
+    </script>
+
+</body>
+</html>

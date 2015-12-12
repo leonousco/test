@@ -1,0 +1,16 @@
+.btn-ok{
+  float: right;
+  font-weight: bold;
+}
+.btn-xx{
+  float: right;
+  margin-right: 4px;
+  font-weight: bold;
+}
+.container {
+     width: 1400px;
+     margin-left: 100px
+}
+
+
+
